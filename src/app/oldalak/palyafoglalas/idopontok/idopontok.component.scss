@@ -1,0 +1,100 @@
+$kozepesNarancs: #FF9205;
+$arany: #FEF857;
+$sotetNarancs: #CE5501;
+$feketeNarancs: #9A4D00;
+$feher: #ffffff;
+
+@media only screen and (max-width: 1400px) {
+    #egyVonalban {
+        top: 470px !important;
+        display: block !important;
+        position: relative !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    #kettoOszlop {
+        margin-left: -24px !important;
+    }
+    #ara {
+        top: 690px !important;
+        margin-right: 0 !important;
+    }
+}
+
+#idopontRadio {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50px;
+}
+
+#kettoOszlop {
+    column-count: 2;
+}
+
+.lehetsegesIdopontok {
+    margin: 4px;
+    color: black;
+    border-radius: 10px;
+    border: 5px solid $feketeNarancs;
+    display: inline-flex;
+    background: -webkit-linear-gradient(90deg, $kozepesNarancs, $sotetNarancs);
+}
+
+.lehetsegesIdopontok input {
+    padding: 0;
+    margin: 0;
+    width: 50px;
+    height: 20px;
+    margin: 6px 0;
+    accent-color: $feketeNarancs;
+    cursor: pointer;
+}
+
+.lehetsegesIdopontok label {
+    padding: 0;
+    margin: 0;
+    width: 50px;
+    font-size: 20px;
+    margin: 4px 26px 0 0;
+    height: 28px;
+    text-align: right;
+    vertical-align: middle;
+    color: $arany;
+}
+
+#egyVonalban {
+    display: inline-block;
+    width: 250px;
+    position: absolute;
+}
+
+#ara {
+    position: relative;
+    top: 340px;
+    margin-right: 85px;
+}
+
+#ar {
+    display: block;
+    background: -webkit-linear-gradient(90deg, $kozepesNarancs, $sotetNarancs);
+    color: $arany;
+    border: 5px solid $feketeNarancs;
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    color: $arany;
+}

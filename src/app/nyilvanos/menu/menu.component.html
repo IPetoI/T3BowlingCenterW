@@ -1,0 +1,34 @@
+<mat-nav-list id="lista">
+    <a mat-list-item routerLink="kezdolap" (click)="close()">
+        <mat-icon class="menuIkon">home</mat-icon>
+        <span>Kezdőlap</span>
+    </a>
+    <a mat-list-item routerLink="galleria" (click)="close()">
+        <mat-icon class="menuIkon">photo_library</mat-icon>
+        <span>Galléria</span>
+    </a>
+    <a mat-list-item routerLink="palyafoglalas" (click)="close()">
+        <mat-icon class="menuIkon">event_available</mat-icon>
+        <span>Pályafoglalás</span>
+    </a>
+    <a mat-list-item routerLink="rolunk" (click)="close()">
+        <mat-icon class="menuIkon">info</mat-icon>
+        <span>Rólunk</span>
+    </a>
+    <a mat-list-item routerLink="bejelentkezes" (click)="close()" *ngIf="!bejelentkezetFelhasznalo">
+        <mat-icon class="menuIkon">login</mat-icon>
+        <span>Bejelentkezés</span>
+    </a>
+    <a mat-list-item routerLink="regisztracio" (click)="close()" *ngIf="!bejelentkezetFelhasznalo">
+        <mat-icon class="menuIkon">how_to_reg</mat-icon>
+        <span>Regisztráció</span>
+    </a>
+    <a mat-list-item routerLink="profil" (click)="close()" *ngIf="bejelentkezetFelhasznalo">
+        <mat-icon class="menuIkon">person</mat-icon>
+        <span>Profil</span>
+    </a>
+    <a mat-list-item (click)="close(); kijelentkezes()" *ngIf="bejelentkezetFelhasznalo">
+        <mat-icon class="menuIkon">logout</mat-icon>
+        <span>Kijelentkezés</span>
+    </a>
+</mat-nav-list>

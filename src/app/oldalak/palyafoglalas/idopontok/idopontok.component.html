@@ -1,0 +1,94 @@
+<div id="egyVonalban">
+    <div id="idopontRadio">
+        <div id="kettoOszlop">
+            <div class="lehetsegesIdopontok"
+                *ngIf="(vasarnapInp && jelenlegiOra<10 && vanHely10NS) || (vanHely10NS && masiknap && vasarnapInp)">
+                <input type="radio" (click)="kijelolve('benyomva10')" name="idopont" value="10:00"
+                    [checked]="benyomva10NS">
+                <label for="10:00">10:00</label>
+            </div>
+            <div class="lehetsegesIdopontok"
+                *ngIf="(vasarnapInp && jelenlegiOra<11 && vanHely11NS) || (vanHely11NS && masiknap && vasarnapInp)">
+                <input type="radio" (click)="kijelolve('benyomva11')" name="idopont" value="11:00"
+                    [checked]="benyomva11NS">
+                <label for="11:00">11:00</label>
+            </div>
+            <div class="lehetsegesIdopontok"
+                *ngIf="(vasarnapInp && jelenlegiOra<12 && vanHely12NS) || (vanHely12NS && masiknap && vasarnapInp)">
+                <input type="radio" (click)="kijelolve('benyomva12')" name="idopont" value="12:00"
+                    [checked]="benyomva12NS">
+                <label for="12:00">12:00</label>
+            </div>
+            <div class="lehetsegesIdopontok"
+                *ngIf="(vasarnapInp && jelenlegiOra<13 && vanHely13NS) || (vanHely13NS && masiknap && vasarnapInp)">
+                <input type="radio" (click)="kijelolve('benyomva13')" name="idopont" value="13:00"
+                    [checked]="benyomva13NS">
+                <label for="13:00">13:00</label>
+            </div>
+            <div class="lehetsegesIdopontok"
+                *ngIf="((vasarnapInp || hetfoInp || keddInp || szerdaInp || csutortokInp || pentekInp || szombatInp) && jelenlegiOra<14 && vanHely14NS) || (vanHely14NS && masiknap && (vasarnapInp || hetfoInp || keddInp || szerdaInp || csutortokInp || pentekInp || szombatInp))">
+                <input type="radio" (click)="kijelolve('benyomva14')" name="idopont" value="14:00"
+                    [checked]="benyomva14NS">
+                <label for="14:00">14:00</label>
+            </div>
+            <div class="lehetsegesIdopontok"
+                *ngIf="((vasarnapInp || hetfoInp || keddInp || szerdaInp || csutortokInp || pentekInp || szombatInp) && jelenlegiOra<15 && vanHely15NS) || (vanHely15NS && masiknap && (vasarnapInp || hetfoInp || keddInp || szerdaInp || csutortokInp || pentekInp || szombatInp))">
+                <input type="radio" (click)="kijelolve('benyomva15')" name="idopont" value="15:00"
+                    [checked]="benyomva15NS">
+                <label for="15:00">15:00</label>
+            </div>
+            <div class="lehetsegesIdopontok"
+                *ngIf="((vasarnapInp || hetfoInp || keddInp || szerdaInp || csutortokInp || pentekInp || szombatInp) && jelenlegiOra<16 && vanHely16NS) || (vanHely16NS && masiknap && (vasarnapInp || hetfoInp || keddInp || szerdaInp || csutortokInp || pentekInp || szombatInp))">
+                <input type="radio" (click)="kijelolve('benyomva16')" name="idopont" value="16:00"
+                    [checked]="benyomva16NS">
+                <label for="16:00">16:00</label>
+            </div>
+            <div class="lehetsegesIdopontok"
+                *ngIf="((vasarnapInp || hetfoInp || keddInp || szerdaInp || csutortokInp || pentekInp || szombatInp) && jelenlegiOra<17 && vanHely17NS) || (vanHely17NS && masiknap && (vasarnapInp || hetfoInp || keddInp || szerdaInp || csutortokInp || pentekInp || szombatInp))">
+                <input type="radio" (click)="kijelolve('benyomva17')" name="idopont" value="17:00"
+                    [checked]="benyomva17NS">
+                <label for="17:00">17:00</label>
+            </div>
+            <div class="lehetsegesIdopontok"
+                *ngIf="((vasarnapInp || hetfoInp || keddInp || szerdaInp || csutortokInp || pentekInp || szombatInp) && jelenlegiOra<18 && vanHely18NS) || (vanHely18NS && masiknap && (vasarnapInp || hetfoInp || keddInp || szerdaInp || csutortokInp || pentekInp || szombatInp))">
+                <input type="radio" (click)="kijelolve('benyomva18')" name="idopont" value="18:00"
+                    [checked]="benyomva18NS">
+                <label for="18:00">18:00</label>
+            </div>
+            <div class="lehetsegesIdopontok"
+                *ngIf="((vasarnapInp || hetfoInp || keddInp || szerdaInp || csutortokInp || pentekInp || szombatInp) && jelenlegiOra<19 && vanHely19NS) || (vanHely19NS && masiknap && (vasarnapInp || hetfoInp || keddInp || szerdaInp || csutortokInp || pentekInp || szombatInp))">
+                <input type="radio" (click)="kijelolve('benyomva19')" name="idopont" value="19:00"
+                    [checked]="benyomva19NS">
+                <label for="19:00">19:00</label>
+            </div>
+            <div class="lehetsegesIdopontok"
+                *ngIf="(szombatInp && jelenlegiOra<20 && vanHely20NS) || (vanHely20NS && masiknap && szombatInp)">
+                <input type="radio" (click)="kijelolve('benyomva20')" name="idopont" value="20:00"
+                    [checked]="benyomva20NS">
+                <label for="20:00">20:00</label>
+            </div>
+            <div class="lehetsegesIdopontok"
+                *ngIf="(szombatInp && jelenlegiOra<21 && vanHely21NS) || (vanHely21NS && masiknap && szombatInp)">
+                <input type="radio" (click)="kijelolve('benyomva21')" name="idopont" value="21:00"
+                    [checked]="benyomva21NS">
+                <label for="21:00">21:00</label>
+            </div>
+            <div class="lehetsegesIdopontok"
+                *ngIf="(szombatInp && jelenlegiOra<22 && vanHely22NS) || (vanHely22NS && masiknap && szombatInp)">
+                <input type="radio" (click)="kijelolve('benyomva22')" name="idopont" value="22:00"
+                    [checked]="benyomva22NS">
+                <label for="22:00">22:00</label>
+            </div>
+            <div class="lehetsegesIdopontok"
+                *ngIf="(szombatInp && jelenlegiOra<23 && vanHely23NS) || (vanHely23NS && masiknap && szombatInp) ">
+                <input type="radio" (click)="kijelolve('benyomva23')" name="idopont" value="23:00"
+                    [checked]="benyomva23NS">
+                <label for="23:00">23:00</label>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="ara">
+    <label for="hanyan">Fizetendő összeg</label>
+    <input #ar (change)="ujratoltes()" disabled type="text" id="ar" name="ar" value="-----">
+</div>

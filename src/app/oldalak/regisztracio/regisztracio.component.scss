@@ -1,0 +1,146 @@
+$kozepesNarancs: #FF9205;
+$arany: #FEF857;
+$sotetNarancs: #CE5501;
+$feketeNarancs: #9A4D00;
+$feher: #ffffff;
+$placeholder-szin: rgba(255, 255, 255, 0.803);
+
+@media only screen and (max-width: 991px) {
+    main {
+        height: 1000px !important;
+    }
+    #regisztracio {
+        width: 90% !important;
+    }
+    img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1400px) {
+    main {
+        height: 1000px !important;
+    }
+    #regisztracio {
+        width: 90% !important;
+    }
+}
+
+main {
+    height:1070px;
+    background-image: url(../../../assets/kepek/main.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#regisztracio {
+    position: absolute;
+    top: 190px;
+    width: 60%;
+    border-radius: 0 50px 50px 0;
+    background-color: $sotetNarancs;
+    height: 720px;
+    color: $feher;
+    text-align: center;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+    background: -webkit-linear-gradient(90deg, $arany, $arany, $feketeNarancs);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 12px;
+}
+
+#regisztracioAdatok {
+    display: inline-block;
+    position: relative;
+    top: -10px;
+}
+
+input, select{
+    border-radius: 4px;
+}
+
+#sorban {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33.33%, 1fr));
+    grid-gap: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    margin: auto;
+}
+
+#regisztracioGomb {
+    position: absolute;
+    padding-top: 20px;
+    text-align: center;
+    width: 314px;
+}
+
+button {
+    height: 50px;
+    width: 70%;
+    font-weight: bolder;
+    font-size: 20px;
+    background: -webkit-linear-gradient(90deg, $kozepesNarancs, $sotetNarancs, $kozepesNarancs);
+    color: $feher !important;
+    border-radius: 10px;
+}
+
+button:hover {
+    background: -webkit-linear-gradient(90deg, $sotetNarancs, $kozepesNarancs, $sotetNarancs);
+}
+
+button:active {
+    transform: translateY(4px);
+}
+
+.csillag {
+    color: $sotetNarancs;
+    font-size: 14px;
+    vertical-align: top;
+    text-align: right;
+}
+
+#hibak {
+    padding: 19px 0;
+}
+
+img {
+    width: 70% !important;
+    margin: auto;
+}
+
+::placeholder {
+    color: $placeholder-szin;
+    opacity: 1;
+    padding-left: 3px;
+}
+  
+:-ms-input-placeholder {
+    color: $placeholder-szin;
+}
+  
+::-ms-input-placeholder {
+    color: $placeholder-szin;
+}
+
+mat-form-field input {
+    height: 30px;
+    color: $arany !important;
+    background-color: $feketeNarancs !important;
+}
+
+mdc-text-field {
+    background-color: $sotetNarancs !important;
+}
+
+mat-form-field mat-label {
+    color: $arany;
+  }

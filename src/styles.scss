@@ -1,1 +1,273 @@
-/* You can add global styles to this file, and also import other style files */
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$T3_Bowling_Center-primary: mat.define-palette(mat.$indigo-palette);
+$T3_Bowling_Center-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$T3_Bowling_Center-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$T3_Bowling_Center-theme: mat.define-light-theme((
+  color: (
+    primary: $T3_Bowling_Center-primary,
+    accent: $T3_Bowling_Center-accent,
+    warn: $T3_Bowling_Center-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($T3_Bowling_Center-theme);
+
+$atlatszoSarga: #1AFFC107;
+$narancs: #FDD400;
+$kozepesNarancs: #FF9205;
+$arany: #FEF857;
+$sotetNarancs: #CE5501;
+$feketeNarancs: #9A4D00;
+$feher: #ffffff;
+$fekete: #000000;
+
+
+
+@media only screen and (max-width: 600px) {
+    #navLogo, nav, footer span {
+        display: none !important;
+    }
+    footer {
+        font-size: 16px !important;
+     }
+     #mobilSav, #mobilSav button {
+        display: block !important;
+    }
+}
+ 
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    #navLogo, nav, footer span {
+       display: none !important;
+    }
+    footer {
+       font-size: 16px !important;
+    }
+    #mobilSav, #mobilSav button {
+        display: block !important;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+    #navLogo, nav, footer span {
+        display: none !important;
+    }
+    footer {
+        font-size: 20px !important;
+    }
+    #mobilSav, #mobilSav button {
+        display: block !important;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    #navLogo, footer span {
+        display: none !important;
+    }
+    nav li {
+        padding-top: 40px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    #navLogo, footer span {
+        display: none !important;
+    }
+    nav li {
+        padding-top: 40px !important;
+        padding-right: 60px !important;
+        padding-left: 60px !important;
+    }
+}
+    
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $fekete;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+#mobilSav  {
+    display: none;
+    background-color: $feketeNarancs;
+    height: 80px;
+    position: fixed;
+    z-index: 100;
+}
+
+#navLogoMobil {
+    position: absolute;
+    top: 40px;
+    height: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#mobilSav button {
+    height: 50px;
+    width: 50px;
+    background-color: $feketeNarancs;
+    border: none;
+    outline: none;
+    padding: 25px 0 0 25px;
+}
+
+#navigacio {
+    background-color: $narancs;
+}
+
+nav {
+    position: fixed;
+    display: relative;
+    background-color: $feketeNarancs;
+    text-align: center;
+    width: 100%;
+    height: 105px;
+    z-index: 100;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav li {
+    display: inline-block;
+    padding-right: 40px;
+    padding-left: 40px;
+    vertical-align: middle;
+}
+
+#navLogo {
+    width: 280px;
+    padding-right: 40px;
+    padding-left: 40px;
+    vertical-align: middle;
+}
+
+nav li a {
+    text-decoration: none;
+    font-family:monospace;
+    font-size: 24px;
+    font-weight: 600;
+    background: linear-gradient(to right, $arany 50%, #fffdd1 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    user-select: none;
+}
+
+nav li a:hover {
+    background-position: 0 0;
+    transition: 0.7s;
+}
+
+.aktiv {
+    text-underline-offset: 7px !important;
+    text-decoration: 3px underline $arany !important;
+}
+
+#lenyilo {  
+    background: -webkit-linear-gradient(90deg, $feketeNarancs, $kozepesNarancs, $feketeNarancs);
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    top: 85px;
+    right: 50px;
+    border: 1.5px solid $narancs;
+    border-radius: 20px;
+    visibility: hidden;
+}
+
+input[type="checkbox"]:checked ~ #lenyilo {
+    visibility: visible;
+}
+
+#csukas {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    accent-color: $fekete;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background-image: url(assets/kepek/profilP.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#lenyilo a {
+    position: relative;
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 0.5px 0.5px 18px $kozepesNarancs;
+    text-decoration: none;
+    font-family:monospace;
+    color: $feher;
+    user-select: none;      
+}
+
+footer {
+    color: #fffdd1;
+    background-color: $feketeNarancs;
+    height: 50px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+    margin-top: -75px;
+    font-family:monospace;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+mat-form-field{
+    padding-top:-10px;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    border: 1px solid $sotetNarancs;
+    border-radius: 200px;
+    height: 70px;
+    width: 320px;
+    background-color: $feketeNarancs!important;
+}
+
+.mat-mdc-form-field .mat-mdc-floating-label.mdc-floating-label {
+    padding-top: 15px;
+    padding-left: 13px;
+    
+}
+
+.mat-focused mat-label {
+    color: $arany !important;
+    font-size: 18px;
+}

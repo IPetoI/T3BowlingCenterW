@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "t3bowlingcenter": {
+      "hosting": {
+        "T3_Bowling_Center": [
+          "t3bowlingcenter"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "t3bowlingcenter"
+  }
+}

@@ -1,0 +1,9 @@
+<div id="naptarAlap">
+    <mat-card id="naptar">
+        <mat-calendar [maxDate]="maxDate" [minDate]="jelenlegiDate" [(selected)]="kivalasztott" (selectedChange)="kivalasztottNapIndex()"></mat-calendar>
+      </mat-card>
+      <p>Kiválasztott Dátum: {{kivalasztott | date: 'yyyy.MM.dd'}}</p>
+</div>
+<div id="NincsSzabadHely" *ngIf="nincsSzabadIdopont">
+  Sajnáljuk!<br>Nincs több szabad hely a megadott napra!
+</div>

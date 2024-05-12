@@ -1,0 +1,123 @@
+$kozepesNarancs: #FF9205;
+$arany: #FEF857;
+$sotetNarancs: #CE5501;
+$feketeNarancs: #9A4D00;
+$feher: #ffffff;
+
+@media only screen and (max-width: 766px) {
+    table {
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #alapFoglalasok, #alapAdatok {
+        width: 90% !important;
+    }
+}
+
+main {
+    height: 1000px;
+    background-image: url(../../../assets/kepek/main.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fent {
+    height: 210px;
+}
+
+#alapAdatok {
+    position: absolute;
+    width: 60%;
+    right: 0;
+    border-radius: 50px 0 0 50px;
+    background-color: $sotetNarancs;
+    height: 300px;
+    color: $arany;
+}
+
+#alapFoglalasok {
+    position: relative;
+    margin-top: 400px;
+    width: 60%;
+    border-radius: 0 50px 50px 0;
+    background-color: $sotetNarancs;
+    color: $arany;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+    background: -webkit-linear-gradient(90deg, $arany, $arany, $feketeNarancs);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+#adatokTabla, #foglalasokTabla {
+    width:  100%;
+    height: 60%;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+
+#foglalasokTabla {
+    height: 0;
+}
+
+table {
+    width: 70%;
+    font-size: 20px;
+}
+
+#foglalasokLista {
+    margin-top: 30px;
+    width: 80%;
+    background-color: $kozepesNarancs;
+}
+
+#cimkek {
+    font-weight: bold;
+}
+
+#cimkek td {
+    background-color: $feketeNarancs;
+    height: 0px;
+}
+
+#foglalasokLista tr {
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.kiemeles {
+    color: $arany;
+    font-weight: bold;
+}
+
+.ikon {
+    background-color: $kozepesNarancs;
+    text-align: center;
+    width: 50px;
+    border-radius: 10px;
+    color: $feketeNarancs;
+    cursor: pointer;
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+}
+
+#nincsFoglalas {
+    font-weight: bold;
+    font-size: 20px;
+}

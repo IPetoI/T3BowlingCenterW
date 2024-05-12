@@ -1,0 +1,18 @@
+<main>
+    <div id="adatok">
+        <h1>Pályafoglalás</h1>
+        <div id="elrendezes">
+            <app-adatok [hetfoInp]="hetfoInput" [keddInp]="keddInput" [szerdaInp]="szerdaInput" [csutortokInp]="csutortokInput"
+                [pentekInp]="pentekInput" [szombatInp]="szombatInput" [vasarnapInp]="vasarnapInput"
+                [napInp]="napInput" [honapInp]="honapInput" [evInp]="evInput">
+            </app-adatok>
+            <app-naptar (hetfoEmitter)="hetfoAtadas($event)" (keddEmitter)="keddAtadas($event)" (szerdaEmitter)="szerdaAtadas($event)"
+                (csutortokEmitter)="csutortokAtadas($event)" (pentekEmitter)="pentekAtadas($event)" (szombatEmitter)="szombatAtadas($event)" 
+                (vasarnapEmitter)="vasarnapAtadas($event)" (napEmitter)="napAtadas($event)" (honapEmitter)="honapAtadas($event)" (evEmitter)="evAtadas($event)">
+            </app-naptar>
+            <app-idopontok [hetfoInp]="hetfoInput" [keddInp]="keddInput" [szerdaInp]="szerdaInput" [csutortokInp]="csutortokInput"
+                [pentekInp]="pentekInput" [szombatInp]="szombatInput" [vasarnapInp]="vasarnapInput">
+            </app-idopontok>
+        </div>
+    </div>
+</main>

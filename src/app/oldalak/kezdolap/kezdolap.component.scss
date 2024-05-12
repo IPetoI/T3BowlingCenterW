@@ -1,0 +1,388 @@
+$gomb-arnyek: rgba(216, 216, 216, 0.644);
+$kozepesNarancs: #FF9205;
+$arany: #FEF857;
+$sotetNarancs: #CE5501;
+$feketeNarancs: #9A4D00;
+$feher: #ffffff;
+
+
+@media only screen and (max-width: 600px) {
+    main {
+        height: 2100px !important;      
+    }
+    main button {
+        font-size: 15px !important;
+        padding: 20px 30px !important;  
+        margin-left: 35% !important;   
+    }
+    #nagyLogo {
+        position: absolute !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        top: 14% !important;
+        left: 50% !important;
+        width: 80% !important;
+        height: auto !important;
+        transform: translate(-50%, -50%) !important;
+    }
+    #bekoszonto {
+        font-size: 55px !important;
+        text-align: center !important;
+        padding-top: 580px !important;
+        margin: 0 30px !important;
+    }
+    main h2 {
+        font-size: 22px !important;
+        text-align: center;
+        margin-left: 0 !important;
+    }
+    #programok{
+        height: 400px !important;
+        margin-top: 620px !important;
+    }
+    #araink {
+        height: 400px !important;
+        margin-top: 50px !important;
+    }
+    #araink h1, #programok h1 {
+        font-size: 34px !important;
+        padding-bottom: 0 !important;
+    }
+    .babu {
+        display: none !important;
+    }
+    #araink img, #programok img {
+        width: 90% !important;
+        height: 300px !important;
+        padding: 20px !important;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 766px) {
+    main {
+        height: 2200px !important;      
+    }
+    main button {
+        font-size: 15px !important;
+        padding: 20px 30px !important;  
+        margin-left: 40% !important;  
+    }
+    #nagyLogo {
+        position: absolute !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        top: 14% !important;
+        left: 50% !important;
+        width: 80% !important;
+        height: auto !important;
+        transform: translate(-50%, -50%) !important;
+    }
+    #bekoszonto {
+        font-size: 55px !important;
+        text-align: center !important;
+        padding-top: 620px !important;
+        margin: 0 30px !important;
+    }
+    main h2 {
+        font-size: 24px !important;
+        text-align: center;
+        margin-left: 0 !important;
+    }
+    #programok{
+        height: 450px !important;
+        margin-top: 630px !important;
+    }
+    #araink {
+        height: 450px !important;
+        margin-top: 20px !important;
+    }
+    #araink h1, #programok h1 {
+        font-size: 36px !important;
+        padding-bottom: 0 !important;
+    }
+    .babu {
+        display: none !important;
+    }
+    #araink img, #programok img {
+        width: 90% !important;
+        height: 340px !important;
+        padding: 20px !important;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    main {
+        height: 2380px !important;      
+    }
+    main button { 
+        margin-left: 38% !important;   
+    }
+    #nagyLogo {
+        position: absolute !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        top: 14% !important;
+        left: 50% !important;
+        width: 60% !important;
+        height: auto !important;
+        transform: translate(-50%, -50%) !important;
+    }
+    #bekoszonto {
+        font-size: 55px !important;
+        text-align: center !important;
+        padding-top: 660px !important;
+        margin: 0 30px !important;
+    }
+    main h2 {
+        font-size: 24px !important;
+        text-align: center;
+        margin-left: 0 !important;
+    }
+    #programok{
+        height: 500px !important;
+        margin-top: 670px !important;
+    }
+    #araink {
+        height: 510px !important;
+        margin-top: 20px !important;
+    }
+    #araink h1, #programok h1 {
+        font-size: 36px !important;
+        padding-bottom: 0 !important;
+    }
+    .babu {
+        display: none !important;
+    }
+    #araink img, #programok img {
+        width: 90% !important;
+        height: 410px !important;
+        padding: 20px !important;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    main {
+        height: 2300px !important;      
+    }
+    main button { 
+        margin-left: 40% !important;   
+    }
+    #nagyLogo {
+        position: absolute !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        top: 16% !important;
+        left: 50% !important;
+        width: 50% !important;
+        height: auto !important;
+        transform: translate(-50%, -50%) !important;
+    }
+    #bekoszonto {
+        font-size: 62px !important;
+        text-align: center !important;
+        padding-top: 700px !important;
+        margin: 0 30px !important;
+    }
+    main h2 {
+        font-size: 28px !important;
+        text-align: center;
+        margin-left: 0 !important;
+    }
+    #programok{
+        height: 430px !important;
+        margin-top: 600px !important;
+    }
+    #araink {
+        height: 440px !important;
+        margin-top: 10px !important;
+    }
+    .babu, #araink img, #programok img {
+        height: 300px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    main {
+        height: 2450px !important;      
+    }
+    main button { 
+        margin-left: 40% !important;   
+    }
+    #nagyLogo {
+        position: absolute !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        top: 16% !important;
+        left: 50% !important;
+        width: 50% !important;
+        height: auto !important;
+        transform: translate(-50%, -50%) !important;
+    }
+    #bekoszonto {
+        font-size: 62px !important;
+        text-align: center !important;
+        padding-top: 720px !important;
+        margin: 0 30px !important;
+    }
+    main h2 {
+        font-size: 28px !important;
+        text-align: center;
+        margin-left: 0 !important;
+    }
+    #programok{
+        height: 460px !important;
+        margin-top: 650px !important;
+    }
+    #araink {
+        height: 470px !important;
+        margin-top: 10px !important;
+    }
+    .babu, #araink img, #programok img {
+        height: 340px !important;
+    }
+}
+
+main {
+    background-image: url(../../../assets/kepek/main.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2200px;
+    color: $feher;
+}
+
+#nagyLogo {
+    width: 45%;
+    height: 500px;
+    padding: 180px 50px 0 50px;
+    float: left;
+    animation: beuszas 1.5s linear forwards;
+    transform: translate(100px);
+    opacity: 0;
+}
+
+@keyframes beuszas {
+    30% {
+        transform: translate(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+#bekoszonto {
+    font-size: 66px;
+    padding-top: 200px;
+    margin: 0;
+    cursor: default;
+    user-select: none;
+    color: $arany;
+}
+
+main h2 {
+    font-size: 28px;
+    padding-top: 30px;
+    margin-left: 1000px;
+    padding-bottom: 80px;
+    cursor: default;
+    user-select: none;
+    color: $arany;
+}
+
+main button {
+    display:block;
+    background: -webkit-linear-gradient(90deg, $feketeNarancs, $kozepesNarancs, $feketeNarancs);
+    font-size: 25px;
+    font-weight: 900;
+    margin: 79px 40px; 
+    margin-left: 64%;
+    padding: 40px 60px;    
+    border-radius: 20px;
+    cursor: pointer;    
+    animation: gombBesuhan 2s linear forwards;
+    transform: translate(100px);
+    opacity: 0;
+    transition: 0.7s;
+}
+
+#foglalas {
+    color: $feketeNarancs;
+    text-decoration: none;
+}
+
+main button:hover, main button:hover #foglalas {
+    color: $sotetNarancs;
+}
+
+main button:active {
+    transition: 0.2s !important;
+    box-shadow: 2px 2px 3px $gomb-arnyek;
+}
+
+@keyframes gombBesuhan {
+    60% {
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+#araink {
+    background-color: $sotetNarancs;
+    width: 85%;
+    height: 550px;
+    position: absolute;
+    border-radius: 50px 0 0 50px;
+    right: 0;
+    margin-top: 100px;
+}
+
+#programok {
+    background-color: $sotetNarancs;
+    width: 85%;
+    height: 550px;
+    position: relative;
+    border-radius: 0 50px 50px 0;
+    margin-top: 830px;
+}
+
+#araink h1, #programok h1 {
+    background: -webkit-linear-gradient(90deg, $arany, $arany, $feketeNarancs);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 40px;
+    margin: 0;
+    padding-top: 20px;
+    cursor: default;
+    user-select: none;
+}
+
+#araink img {
+    display: inline-block;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    width: 45%;
+    padding-bottom: 20px;
+    height: 400px;
+}
+
+.babu {
+    width: 20% !important;
+    height: 400px;
+}
+
+#programok img {
+    display: inline-block;
+    padding-left: 1.65%;
+    padding-right: 1.65%;
+    padding-bottom: 40px;
+    width: 50%;
+    height: 400px;
+}

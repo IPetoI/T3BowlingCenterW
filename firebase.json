@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "T3_Bowling_Center",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

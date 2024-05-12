@@ -1,0 +1,107 @@
+$kozepesNarancs: #FF9205;
+$arany: #FEF857;
+$sotetNarancs: #CE5501;
+$feketeNarancs: #9A4D00;
+$feher: #ffffff;
+
+@media only screen and (max-width: 600px) {
+    #elrendezes {
+        display: block !important;
+
+    }
+    main {
+        height: 1800px !important;
+    }
+    #adatok {
+        height: 1450px !important;
+    }
+}
+ 
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    #elrendezes {
+        display: block !important;
+
+    }
+    main {
+        height: 1800px !important;
+    }
+    #adatok {
+        height: 1450px !important;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+    #elrendezes {
+        display: block !important;
+
+    }
+    main {
+        height: 1800px !important;
+    }
+    #adatok {
+        height: 1450px !important;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    #elrendezes {
+        display: block !important;
+
+    }
+    main {
+        height: 1800px !important;
+    }
+    #adatok {
+        height: 1450px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    #elrendezes {
+        display: block !important;
+
+    }
+    main {
+        height: 1800px !important;
+    }
+    #adatok {
+        height: 1450px !important;
+    }
+}
+
+main {
+    height: 1100px;
+    background-image: url(../../../assets/kepek/main.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#adatok {
+    position: absolute;
+    top: 190px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0 50px 50px 0;
+    background-color: $sotetNarancs;
+    height: 720px;
+    color: $feher;
+}
+
+#elrendezes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+    background: -webkit-linear-gradient(90deg, $arany, $arany, $feketeNarancs);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 12px;
+    cursor: default;
+    user-select: none;
+}

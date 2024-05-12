@@ -1,0 +1,21 @@
+$arany: #FEF857;
+$sotetNarancs: #CE5501;
+
+#lista {
+    background-color: $sotetNarancs;
+    height: 100%;
+}
+
+#lista a {
+    align-items: center;
+    text-decoration: none;
+}
+
+.menuIkon {
+    color: $arany;
+}
+
+#lista span {
+    color: $arany;
+    padding: 0 30px;
+}

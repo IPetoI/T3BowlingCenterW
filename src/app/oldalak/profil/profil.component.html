@@ -1,0 +1,41 @@
+<main>
+    <div id="fent"></div>
+    <div id="alapAdatok">
+        <h1>Adatatok</h1>
+        <div id="adatokTabla">
+            <table [cellPadding]="20">
+                <tr>
+                    <td class="kiemeles">Név:</td>
+                    <td>{{ jelenlegiNev }}</td>
+                </tr>
+                <tr>
+                    <td class="kiemeles">E-mail:</td>
+                    <td>{{ jelenlegiEmailCim }}</td>
+                    <td><mat-icon class="ikon" (click)="emailSzerkesztes()">create</mat-icon></td>
+                </tr>
+                <tr>
+                    <td class="kiemeles">Telefonszám:</td>
+                    <td id="jelenlegiTelefonszam">{{ jelenlegiTelefonszam }}</td>
+                    <td><mat-icon class="ikon" (click)="telefonszamSzerkesztes()">create</mat-icon></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="alapFoglalasok">
+        <h1>Foglalások</h1>
+        <div id="foglalasokTabla">
+            <table [cellPadding]="10" id="foglalasokLista">
+                <tr id="cimkek">
+                    <td>Hányan</td>
+                    <td>Dátum</td>
+                    <td>Óra</td>
+                    <td>Ár</td>
+                    <td>X</td>
+                </tr>
+            </table>
+        </div>
+        <div class="centered-content">
+            <span *ngIf="nincsfoglalas" id="nincsFoglalas">Még nincs foglalás rögzítve.</span>
+        </div>
+    </div>
+</main>

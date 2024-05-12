@@ -1,0 +1,52 @@
+<main>
+    <div id="regisztracio">
+        <h1>Regisztráció</h1>
+        <div id="sorban">
+            <img src="../../../assets/kepek/babuB.png" alt="">
+            <form [formGroup]="regisztracioForm" (ngSubmit)="regisztralok()" id="regisztracioAdatok">
+                <mat-form-field>
+                    <mat-label for="nev">Név:</mat-label>
+                    <input matInput #nevReg type="text" id="nev" name="nev" (change)="ujratoltes()" 
+                     formControlName="nevReg">
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <mat-label for="email">E-mail:</mat-label>
+                    <input matInput #emailReg type="email" id="email" name="email" (change)="ujratoltes()" 
+                     formControlName="emailReg" email="true">
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <mat-label for="telefonszam">Telefonszám:</mat-label>
+                    <input matInput #telefonReg type="tel" id="telefonszam" name="telefonszam" (change)="ujratoltes()" 
+                     formControlName="telefonReg" 
+                    (input)="telefonszamEllenorzes($event)" (focus)="onFocus($event)">
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <mat-label for="jelszo">Jelszó:</mat-label>
+                    <input matInput #jelszoReg type="password" id="jelszo" name="jelszo" (change)="ujratoltes()" 
+                     formControlName="jelszoReg">
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <mat-label for="jelszUjra">Jelszó újra:</mat-label>
+                    <input matInput #jelszoIsmetReg type="password" id="jelszoUjra" name="jelszoUjra" (change)="ujratoltes()" 
+                     formControlName="jelszoUjraReg">
+                </mat-form-field>
+                <br>
+                <div id="regisztracioGomb">
+                    <button mat-raised-button (click)="regisztralok()">Regisztrálok!</button>
+                    <div id="hibak">
+                        <div (change)="ujratoltes()" *ngIf="!joJelszavak">Nem egyezik a két jelszó!</div>
+                        <div (change)="ujratoltes()" *ngIf="!jelszavakHossz">Legalább 7 karakter hosszú legyen a jelszó!</div>
+                        <div (change)="ujratoltes()" *ngIf="!telefonszam">Nem helyes a telefonszám formátuma!</div>
+                        <div (change)="ujratoltes()" *ngIf="!email">Nem helyes az e-mail cím formátuma!</div>
+                        <div (change)="ujratoltes()" *ngIf="!valid">Nem adtál meg minden elemet!</div>
+                    </div>
+                </div>
+            </form>
+            <img src="../../../assets/kepek/babuJ.png" alt="">
+        </div>
+    </div>
+</main>

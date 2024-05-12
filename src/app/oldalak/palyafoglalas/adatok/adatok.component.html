@@ -1,0 +1,35 @@
+<form [formGroup]="foglalasForm" (ngSubmit)="lefoglalom()" id="szovegesAdatok">
+    <label for="nev">Név: <span class="csillag">*</span></label>
+    <br>
+    <input #nev (change)="ujratoltes()"  type="text" id="nev" name="nev" placeholder="Galaxy Bowling"
+    formControlName="nevFog">
+    <br><br><br>
+    <label for="email">E-mail: <span class="csillag">*</span></label>
+    <br>
+    <input #email (change)="ujratoltes()"  type="text" id="email" name="email" placeholder="galaxybowlingcenterhun@gmail.com"
+     formControlName="emailFog">
+    <br><br><br>
+    <label for="telefonszam">Telefonszám: <span class="csillag">*</span></label>
+    <br>
+    <input #telefonszam (change)="ujratoltes()"  type="tel" id="telefonszam" name="telefonszam" placeholder="+36 30 000 0000" 
+    formControlName="telefonFog" (focus)="onFocus($event)"  (input)="telefonszamEllenorzes($event)">
+    <br><br><br>
+    <label for="hanyan">Hányan jöttök? <span class="csillag">*</span></label>
+    <br>
+    <span class="adatokNyilak" class="visszaNyilak" (click)="hatraHanyan()">❮</span>
+    <input #hanyan (change)="ujratoltes()"  disabled type="text" id="hanyan" name="hanyan" [value]="szemelySzam + szemelySzoveg">
+    <span class="adatokNyilak" (click)="eloreHanyan()">❯</span>
+    <div id="foglalasGomb">
+        <input id="foglalasGombja" type="submit" value="Foglalok!">
+        <div id="hibak">
+            <div (change)="ujratoltes()" *ngIf="telefonszamHiba">Nem helyes a telefonszám formátuma!</div>
+            <div (change)="ujratoltes()" *ngIf="emailHiba">Nem helyes az e-mail cím formátuma!</div>
+            <div (change)="ujratoltes()" *ngIf="melyikOraHiba">Nem adtál meg időpontot!</div>
+            <div (change)="ujratoltes()" *ngIf="nevHiba">Nem adtál meg nevet!</div>
+        </div>
+        <div id="uzenet" *ngIf="!bejelentkezetFelhasznalo">
+            <a routerLink="../bejelentkezes" (click)="alapAllapot()">Jelentkezz</a><span> be és 5%-al olcsóbban bowlingozhatsz!</span>
+            <span>  Ha pedig nincs fiókod akkor </span> <a routerLink="../regisztracio" (click)="alapAllapot()">Regisztrálj</a> <span>!</span>
+        </div>
+    </div>
+</form>

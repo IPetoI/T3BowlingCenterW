@@ -1,0 +1,212 @@
+$narancs: #FDD400;
+$arany: #FEF857;
+$sotetNarancs: #CE5501;
+$feketeNarancs: #9A4D00;
+$fekete: #000000;
+
+
+@media only screen and (max-width: 991px) {
+    main {
+        height: 3900px !important;  
+    } 
+    #kulsoKeretFent {
+        position: relative;
+        top: -50px !important;
+    }
+    #keretBelso {
+        height: 3400px !important;
+        top: -60px !important;
+    }
+
+    #keretBelso {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)) !important;
+    }
+
+    .doboz {
+        margin: auto !important;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1400px) {
+    main {
+        height: 2200px !important;  
+    } 
+    #kulsoKeretFent {
+        position: relative;
+        top: -50px !important;
+    }
+    #keretBelso {
+        height: 1700px !important;
+        top: -60px !important;
+    }
+
+    #keretBelso {
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr)) !important;
+    }
+
+    .doboz {
+        margin: auto !important;
+    }
+}
+
+main {
+    height: 1650px;
+    background-image: url(../../../assets/kepek/main.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#kulsoKeretFent {
+    height: 255px;
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    top: 290px;
+    font-size: 45px;
+    margin: 0;
+    background: -webkit-linear-gradient(90deg, $arany, $arany, $feketeNarancs);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 2;
+    cursor: default;
+    user-select: none;
+}
+
+#keretBelso {
+    height: 1100px;
+    background: $sotetNarancs;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33.33%, 1fr));
+    grid-gap: 0;
+    position: relative;
+    padding-top: 120px;
+    justify-items: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.doboz {
+    position: relative;
+    max-width: 420px;
+    width: 380px;
+    min-width: 300px;
+    min-height: 200px;
+    height: 250px;
+    max-height: 320px;
+    padding: 18px;
+    margin: 10px 25px;
+    text-align: center;
+    transition: 0.6s;
+    box-shadow: 0px 0px 10px 2px $arany;
+    background: -webkit-linear-gradient(120deg, $narancs, $feketeNarancs);
+    border-radius: 40px 10px;
+}
+
+img {
+    width: 100%;
+    height: 250px;
+    border-radius: 20px 5px;
+    cursor: pointer;
+}
+
+#nagyKep {
+    margin: auto;
+    display: block;
+    width: 70%;
+    max-width: 1200px; 
+    min-height: 500px;
+    max-height: 550px;
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+#nagyKepDiv {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+#nagyBal, #nagyJobb {
+    color: #c7c7c7;
+    font-size: 150px;
+    z-index: 70;
+    height: 50px !important;
+    width: 50px !important;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    margin-top: -370px;
+    cursor: pointer;
+    padding-bottom: 200px;
+    user-select: none;
+}
+
+#nagyBal:hover, #nagyJobb:hover, #bezar:hover {
+    color: #8a8a8a;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#nagyBal {
+    left: 0;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+#nagyJobb {
+    right: 0;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+  
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+.neGorgess {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+#bezar {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    user-select: none;
+  }
+
+#index {
+    width: 100%;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    padding-top: 15px;
+    cursor: default;
+}

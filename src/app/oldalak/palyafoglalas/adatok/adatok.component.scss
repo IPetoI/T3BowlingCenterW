@@ -1,0 +1,218 @@
+$kozepesNarancs: #FF9205;
+$arany: #FEF857;
+$sotetNarancs: #CE5501;
+$feketeNarancs: #9A4D00;
+$feher: #ffffff;
+$placeholder-szin: rgba(255, 255, 255, 0.803);
+
+@media only screen and (max-width: 600px) {
+    #foglalasGombja {
+        width: 180px !important;
+        top: 640px !important;
+        position: relative !important;
+    }
+    #hibak, #uzenet {
+        top: 640px !important;
+        position: relative !important;
+    }
+    input:not(#foglalasGombja, #hanyan), select {
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    label, .visszaNyilak {
+        margin-left: 20% !important;
+    }
+}
+ 
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    #foglalasGombja {
+        width: 180px !important;
+        top: 640px !important;
+        position: relative !important;
+    }
+    #hibak, #uzenet {
+        top: 640px !important;
+        position: relative !important;
+    }
+    input:not(#foglalasGombja, #hanyan), select {
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    label, .visszaNyilak {
+        margin-left: 24% !important;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+    #foglalasGombja {
+        width: 180px !important;
+        top: 640px !important;
+        position: relative !important;
+    }
+    #hibak, #uzenet {
+        top: 640px !important;
+        position: relative !important;
+    }
+    input:not(#foglalasGombja, #hanyan), select {
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    label, .visszaNyilak {
+        margin-left: 28% !important;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    #foglalasGombja {
+        width: 180px !important;
+        top: 640px !important;
+        position: relative !important;
+    }
+    #hibak, #uzenet {
+        top: 640px !important;
+        position: relative !important;
+    }
+    input:not(#foglalasGombja, #hanyan), select {
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    label, .visszaNyilak {
+        margin-left: 32% !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    #foglalasGombja {
+        width: 180px !important;
+        top: 640px !important;
+        position: relative !important;
+    }
+    #hibak, #uzenet {
+        top: 640px !important;
+        position: relative !important;
+    }
+    input:not(#foglalasGombja, #hanyan), select {
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    label, .visszaNyilak {
+        margin-left: 36% !important;
+    }
+}
+
+#szovegesAdatok {
+    display: inline-block;
+    position: absolute;
+    top: 125px;
+    width: 100%;
+}
+
+label {
+    font-size: 20px;
+    margin-left: 100px;
+    color: $arany;
+}
+
+input:not(#foglalasGombja), select{
+    background: -webkit-linear-gradient(180deg, $kozepesNarancs, $sotetNarancs);
+    color: $arany;
+    border: 5px solid $feketeNarancs;
+    border-radius: 10px;
+    font-size: 16px;
+    height: 30px;
+    width: 270px;
+    margin-left: 100px;
+}
+
+#hanyan {
+    cursor: default;
+    text-align: center;
+    width: 224px !important;
+    user-select: none;
+    margin-left: 0 !important;
+}
+
+.adatokNyilak, .visszaNyilak {
+    cursor: pointer;
+    font-size: 26px;
+    width: 20px;
+    height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    user-select: none;
+    color: $arany;
+}
+
+.visszaNyilak {
+    margin-left: 100px;
+}
+
+#foglalasGomb {
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+
+#foglalasGomb input {
+    height: 50px;
+    width: 12%;
+    font-weight: bolder;
+    font-size: 20px;
+    background: -webkit-linear-gradient(90deg, $kozepesNarancs, $sotetNarancs, $kozepesNarancs);
+    color: $arany;
+    border-radius: 10px;
+}
+
+#foglalasGomb input:hover {
+    background: -webkit-linear-gradient(90deg, $sotetNarancs, $kozepesNarancs, $sotetNarancs);
+}
+
+#foglalasGomb input:active {
+    transform: translateY(4px);
+}
+
+#hibak {
+    padding: 5px 0 0 0;
+}
+
+#uzenet {
+    position: relative;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#uzenet a {
+    text-decoration: none;
+    color: $arany;
+}
+
+#uzenet a:hover {
+    text-decoration: none;
+    color: $kozepesNarancs;
+}
+
+.csillag {
+    color: $sotetNarancs;
+    font-size: 14px;
+    vertical-align: top;
+    text-align: right;
+}
+
+::placeholder {
+    color: $arany;
+    opacity: 1;
+}
+  
+:-ms-input-placeholder {
+    color: $arany;
+}
+  
+::-ms-input-placeholder {
+    color: $arany;
+}

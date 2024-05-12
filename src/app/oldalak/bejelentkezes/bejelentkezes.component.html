@@ -1,0 +1,28 @@
+<main>
+    <div id="bejelentkezes">
+        <h1>Bejelentkezés</h1>
+        <div id="sorban">
+            <img src="../../../assets/kepek/babuB.png" alt="">
+            <div id="adatok">
+                <mat-form-field>
+                    <mat-label for="email">E-mail:</mat-label>
+                    <input matInput #emailBejelentkezes type="email" (change)="ujratoltes()" id="email" name="email"
+                    [ngStyle]="{'background' : emailBejelentkezes.value.length > 0 ? '#9A4D00'
+                    : '#CE5501' }" [formControl]="email" required> 
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label for="jelszo">Jelszó:</mat-label>
+                    <input matInput #jelszoBejelentkezes type="password" (change)="ujratoltes()" id="jelszo" name="jelszo"
+                    [ngStyle]="{'background' : jelszoBejelentkezes.value.length > 0 ? '#9A4D00'
+                    : '#CE5501' }" [formControl]="jelszo" required>
+                </mat-form-field>
+                <br>
+                <div id="bejelentkezesGomb">
+                    <button mat-raised-button (click)="bejelentkezes()">Bejelentkezés</button>
+                    <div id="hiba" (change)="ujratoltes()" *ngIf="hiba">A jelszó vagy az e-mail cím hibás!</div>
+                </div>
+            </div>
+            <img src="../../../assets/kepek/babuJ.png" alt="">
+        </div>
+    </div>
+</main>

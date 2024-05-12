@@ -1,0 +1,401 @@
+$kozepesNarancs: #FF9205;
+$arany: #FEF857;
+$sotetNarancs: #CE5501;
+$feketeNarancs: #9A4D00;
+
+@media only screen and (max-width: 600px) {
+    main {
+        height: 2150px !important;
+    }
+
+    #alapElErhetoseg {
+        top: 200px !important;
+        width: 95% !important;
+    } 
+
+    h1 {
+        margin-left: 35px !important;
+    }
+
+    #vizszint {
+        display: block !important;
+        height: 130px !important;
+        padding: 20px 6% !important;
+    }
+
+    .oszlop {
+        display: flex !important;
+        height: 160px !important;
+        align-items: center !important;
+        flex-direction: row !important;
+    }
+
+    #mobil {
+        width: 12% !important;
+        margin-left: 85px !important;
+    }
+
+    #email {
+        width: 24% !important;
+        margin-left: 50px !important;
+        padding-bottom: 50px !important;
+    }
+
+    #emailCim {
+        padding-left: 5% !important;
+    }
+
+    #mobilSzam {
+        padding-left: 12% !important;
+    }
+
+    #mobilSzam, #emailCim {
+        font-size: 20px !important;
+        align-items: center !important;
+        justify-content: center !important;
+        display: flex !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    #alapNyitvatartas {
+        margin-top: 550px !important;
+        width: 95% !important;
+    }
+
+    #alapNyitvatartas p {
+
+        font-size: 29px !important;
+    }
+
+    #alapTerkep {
+        margin-top: 110px !important;
+        width: 95% !important;
+    }
+
+    iframe{
+        width: 85% !important;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 766px) {
+    main {
+        height: 2150px !important;
+    }
+
+    #alapElErhetoseg {
+        top: 200px !important;
+        width: 95% !important;
+    } 
+
+    h1 {
+        margin-left: 35px !important;
+    }
+
+    #vizszint {
+        display: block !important;
+        height: 130px !important;
+        padding: 20px 10% !important;
+    }
+
+    .oszlop {
+        display: flex !important;
+        height: 160px !important;
+        align-items: center !important;
+        flex-direction: row !important;
+    }
+
+    #mobil {
+        width: 12% !important;
+        margin-left: 85px !important;
+    }
+
+    #email {
+        width: 24% !important;
+        margin-left: 50px !important;
+        padding-bottom: 50px !important;
+    }
+
+    #emailCim {
+        padding-left: 5% !important;
+    }
+
+    #mobilSzam {
+        padding-left: 12% !important;
+    }
+
+    #mobilSzam, #emailCim {
+        font-size: 20px !important;
+        align-items: center !important;
+        justify-content: center !important;
+        display: flex !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    #alapNyitvatartas {
+        margin-top: 550px !important;
+        width: 95% !important;
+    }
+
+    #alapTerkep {
+        margin-top: 110px !important;
+        width: 95% !important;
+    }
+
+    iframe{
+        width: 85% !important;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    main {
+        height: 2150px !important;
+    }
+
+    #alapElErhetoseg {
+        top: 200px !important;
+        width: 95% !important;
+    } 
+
+    h1 {
+        margin-left: 35px !important;
+    }
+
+    #vizszint {
+        display: block !important;
+        height: 130px !important;
+        padding: 20px 12% !important;
+    }
+
+    .oszlop {
+        display: flex !important;
+        height: 160px !important;
+        align-items: center !important;
+        flex-direction: row !important;
+    }
+
+    #mobil {
+        width: 12% !important;
+        margin-left: 85px !important;
+    }
+
+    #email {
+        width: 24% !important;
+        margin-left: 50px !important;
+        padding-bottom: 50px !important;
+    }
+
+    #emailCim {
+        padding-left: 5% !important;
+    }
+
+    #mobilSzam {
+        padding-left: 12% !important;
+    }
+
+    #mobilSzam, #emailCim {
+        font-size: 25px !important;
+        align-items: center !important;
+        justify-content: center !important;
+        display: flex !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    #alapNyitvatartas {
+        margin-top: 550px !important;
+        width: 85% !important;
+    }
+
+    #alapTerkep {
+        margin-top: 110px !important;
+        width: 95% !important;
+    }
+
+    iframe{
+        width: 90% !important;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    main {
+        height: 2150px !important;
+    }
+
+    #alapElErhetoseg {
+        top: 200px !important;
+        width: 80% !important;
+    } 
+
+    h1 {
+        margin-left: 35px !important;
+    }
+
+    #vizszint {
+        display: block !important;
+        height: 120px !important;
+        padding: 20px 18% !important;
+    }
+
+    .oszlop {
+        display: flex !important;
+        align-items: center !important;
+        flex-direction: row !important;
+    }
+
+    #mobil {
+        width: 15% !important;
+        margin-left: 85px !important;
+    }
+
+    #email {
+        width: 30% !important;
+        margin-left: 50px !important;
+        padding-bottom: 50px !important;
+    }
+
+    #emailCim {
+        padding-left: 10% !important;
+    }
+
+    #mobilSzam {
+        padding-left: -10% !important;
+    }
+
+    #mobilSzam, #emailCim {
+        font-size: 25px !important;
+        align-items: center !important;
+        justify-content: center !important;
+        display: flex !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    #alapNyitvatartas {
+        margin-top: 550px !important;
+        width: 60% !important;
+    }
+
+    #alapTerkep {
+        margin-top: 110px !important;
+        width: 85% !important;
+    }
+
+    iframe{
+        width: 90% !important;
+    }
+}
+
+main {
+    height: 2300px;
+    background-image: url(../../../assets/kepek/main.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fent {
+    height: 255px;
+}
+
+#alapElErhetoseg {
+    position: absolute;
+    width: 70%;
+    right: 0;
+    border-radius: 50px 0 0 50px;
+    background-color: $sotetNarancs;
+    height: 500px;
+    color: $arany;
+}
+
+#alapNyitvatartas {
+    position: relative;
+    margin-top: 650px;
+    width: 60%;
+    border-radius: 0 50px 50px 0;
+    background-color: $sotetNarancs;
+    height: 350px;
+    color: $arany;
+}
+
+#alapNyitvatartas h1 {
+    padding-top: 10px;
+    margin-bottom: 60px;
+    cursor: default;
+    user-select: none;
+}
+
+#alapNyitvatartas p {
+    text-align: center;
+    font-size: 34px;
+    margin: 25px 0;
+    cursor: default;
+    user-select: none;
+}
+
+#alapTerkep {
+    position: absolute;
+    right: 0;
+    margin-top: 150px;
+    width: 70%;
+    border-radius: 50px 0 0 50px;
+    background-color: $sotetNarancs;
+    height: 700px;
+}
+
+iframe {
+    margin-left: 40px;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+    background: -webkit-linear-gradient(90deg, $arany, $arany, $feketeNarancs);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: default;
+    user-select: none;
+}
+
+p {
+    font-size: 25px;
+}
+
+#vizszint {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    height: 60%;
+}   
+
+.oszlop {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oszlop p:last-child {
+    margin-top: auto;
+  }
+
+#mobil {
+    width: 20%;
+    padding-bottom: 5px;
+}
+
+#email {
+    width: 40%;
+    padding-bottom: 25px;
+    margin-top: 60px;
+}
+
+#email:hover, #mobil:hover {
+    transform: translateY(-20px);
+}
+
+#emailCim:hover, #mobilSzam:hover {
+    color: $kozepesNarancs;
+    text-shadow: 1px 1px 1px $sotetNarancs;
+}
